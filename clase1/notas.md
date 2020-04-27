@@ -38,4 +38,12 @@
 > uno de fin 
 
     ?>
-   
+    
+## Variables y constantes
+
+> Una variable sirve para almacenar datos  
+> Se almacenan datos para utilizarlos después
+
+> las variables se marcan con el sign $
+
+ 
