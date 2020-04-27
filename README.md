@@ -3,7 +3,7 @@
 >docente Marcos Pinardi
 
 ## Requisitos 
-### De Conociumientos
+### De Conocimientos
 
   1. Concimiento de HTMl
   2. Conocimientos de SQL
