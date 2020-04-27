@@ -47,3 +47,8 @@
 > las variables se marcan con el sign $
 
  
+TAREA: 
+
+    ver imagen "tarea.png" 
+    
+    leer formularios 
