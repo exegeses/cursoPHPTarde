@@ -19,7 +19,7 @@ echo '</pre>';
 <br>
 <?php
     $alemanes = [
-                    'BMW', 'Mercedes Benz', 'Audi',
+                    'BMW', 'Mercedes Benz', 6 => 'Audi',
                     'Porsche', 'Volkswagen', 'Daimler',
                     'Opel'
                 ];
