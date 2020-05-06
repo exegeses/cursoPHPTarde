@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Raleway;
+    font-size: 1.2em;
+    color: #666;
+    padding-top: 25px;
+}
