@@ -17,6 +17,7 @@
         "tuk-tuk",
         "wat-saket"
     ];
+    $cantidad = count($locacion);
 ?>
 <!doctype html>
 <html lang="en">
@@ -31,16 +32,23 @@
 </head>
 <body>
     <main class="container">
+
         <h1>Locaciones en Tailandia</h1>
 
-
-        <article class="card col-3 p-0">
-            <img src="tailandia/muestra.png" class="card-img-top">
-            <div class="card-body">
-                nombre de la locación
-            </div>
-        </article>
-
+        <section class="row">
+<?php
+        for ( $i = 0; $i < $cantidad; $i++ ){
+?>
+            <article class="card col-4 p-0">
+                <img src="tailandia/<?= $locacion[$i] ?>.jpg" class="card-img-top">
+                <div class="card-body">
+                    <?= $locacion[$i]; ?>
+                </div>
+            </article>
+<?php
+        }
+?>
+        </section>
     </main>
 
 </body>
