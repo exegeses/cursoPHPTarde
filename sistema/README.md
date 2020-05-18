@@ -6,12 +6,3 @@
     
 >Tarea
 
-    hacer 
-    1. panel de administración de marcas
-    2. panel de administración de usuarios
-    
-
-    opcional: 
-      formulario para agregar usuarios
-      
-    
