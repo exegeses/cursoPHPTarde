@@ -12,6 +12,18 @@
         return $resultado;
     }
 
+    function agregarCategoria()
+    {
+        $catNombre = $_POST['catNombre'];
+        $link = conectar();
+        $sql = "INSERT INTO categorias
+                       ( catNombre )
+                    VALUES
+                       ( '".$catNombre."' )";
+        $resultado = mysqli_query($link, $sql);
+        return $resultado;
+    }
+
     /**
      * listarCategorias()
      * verCategoriaPorID()
