@@ -6,3 +6,6 @@
     
 >Tarea
 
+  hacer agregar marcas
+  
+  si quieren intenter agregar Productos, DALE PAPUUUU!
