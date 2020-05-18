@@ -16,7 +16,7 @@
                 <button class="btn btn-dark">
                     Agregar categoría
                 </button>
-                <a href="adminCategorias.php" class="btn btn-outline-secondary">
+                <a href="adminCategorias.php" class="btn btn-outline-secondary ml-3">
                     volver a panel
                 </a>
             </form>

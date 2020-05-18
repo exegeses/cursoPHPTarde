@@ -12,6 +12,6 @@
     
 
     opcional: 
-      formilario para agregar usuarios
+      formulario para agregar usuarios
       
     
