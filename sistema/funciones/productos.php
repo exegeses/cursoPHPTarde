@@ -90,6 +90,24 @@
         return $producto;
     }
 
+    function modificarProducto()
+    {
+        //capturamos detos desde el form
+        $idProducto = $_POST['idProducto'];
+        $prdNombre = $_POST['prdNombre'];
+        $prdPrecio = $_POST['prdPrecio'];
+        $idMarca = $_POST['idMarca'];
+        $idCategoria = $_POST['idCategoria'];
+        $prdPresentacion = $_POST['prdPresentacion'];
+        $prdStock = $_POST['prdStock'];
+        $prdImagen = subirArchivo();
+
+        $link = conectar();
+
+        $sql = "";
+
+    }
+
     /**
      * listarProductos()
      * verProductoPorID()
