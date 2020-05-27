@@ -108,8 +108,20 @@
 
         $link = conectar();
 
-        $sql = "";
-
+        $sql = "UPDATE productos 
+                    SET 
+                        prdNombre='".$prdNombre."', 
+                        prdPrecio=".$prdPrecio.", 
+                        idMarca=".$idMarca.", 
+                        idCategoria=".$idCategoria.", 
+                        prdPresentacion='".$prdPresentacion."', 
+                        prdStock=".$prdStock.", 
+                        prdImagen='".$prdImagen."' 
+                    WHERE 
+                        idProducto = ".$idProducto;
+        $resultado = mysqli_query($link, $sql)
+                                or die( mysqli_error( $link ) );
+        return $resultado;
     }
 
     /**
