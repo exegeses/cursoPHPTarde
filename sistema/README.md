@@ -6,7 +6,6 @@
     
 >Tarea
 
-  chequear que tengas los 4 agregar 
+  hacer todos los modificar 
   
-  terminar modificar Producto
 
