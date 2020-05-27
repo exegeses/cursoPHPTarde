@@ -23,7 +23,11 @@
 
     function subirArchivo()
     {
-        $prdImagen = 'noDisponible.jpg'; // si NO enviaron archivo
+        $prdImagen = 'noDisponible.jpg'; // si NO enviaron archivo en AGREGAR
+
+        if( isset($_POST['imgOriginal']) ){ // si NO enviaron nada en MODIFICAR
+            $prdImagen = $_POST['imgOriginal'];
+        }
 
         if( $_FILES['prdImagen']['error'] == 0 ){  // si enviaron archivo y esta OK
             $path = 'productos/';

@@ -50,7 +50,7 @@
                 <div class="form-group">
                     <label for="idCategoria">Categoría</label>
                     <select class="form-control" name="idCategoria" id="idCategoria" required>
-                        <option value="<?= $producto['idcategoria'] ?>"><?= $producto['catNombre'] ?></option>
+                        <option value="<?= $producto['idCategoria'] ?>"><?= $producto['catNombre'] ?></option>
 <?php
             while( $categoria = mysqli_fetch_assoc( $categorias ) ){
 ?>                        
@@ -79,7 +79,7 @@
                 </div>
 
                 <input type="hidden" name="idProducto" value="<?= $producto['idProducto'] ?>">
-
+                <input type="hidden" name="imgOriginal" value="<?= $producto['prdImagen'] ?>">
                 <button class="btn btn-dark mr-3 px-4">Modificar producto</button>
                 <a href="adminProductos.php" class="btn btn-outline-secondary">
                     Volver a panel de productos

@@ -9,4 +9,4 @@
   chequear que tengas los 4 agregar 
   
   terminar modificar Producto
-  git cop
+
