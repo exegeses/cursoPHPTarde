@@ -6,6 +6,6 @@
     
 >Tarea
 
-  terminar todos los aliminar 
+  terminar todos los eliminar 
   
 
