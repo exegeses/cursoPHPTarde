@@ -6,6 +6,6 @@
     
 >Tarea
 
-  hacer todos los modificar 
+  terminar todos los aliminar 
   
 
