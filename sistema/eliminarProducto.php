@@ -2,20 +2,20 @@
     #require 'config/config.php';
     require 'funciones/conexion.php';
     require 'funciones/productos.php';
-    $chequeo = agregarProducto();
+        $chequeo = eliminarProducto();
 	include 'includes/header.html';  
 	include 'includes/nav.php';  
 ?>
 
     <main class="container">
-        <h1>Alta de un nuevo producto</h1>
+        <h1>Baja de un producto</h1>
 <?php
         $colorDiv = 'danger';
-        $mensaje = 'No se pudo agregar el producto,';
+        $mensaje = 'No se pudo eliminar el producto,';
 
         if( $chequeo ){
             $colorDiv = 'success';
-            $mensaje = 'Producto agregado correctamente.';
+            $mensaje = 'Producto eliminado correctamente.';
         }
 ?>
         <div class="alert alert-<?= $colorDiv ?>">
@@ -24,6 +24,7 @@
                 volver a panel
             </a>
         </div>
+
     </main>
 
 <?php  include 'includes/footer.php';  ?>
