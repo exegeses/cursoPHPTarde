@@ -23,10 +23,18 @@
         </div>
 <?php
     }else{
+        $marca = verMarcaPorID();
 ?>
-        <div class="article card border-danger text-danger col-md-6">
+        <div class="article card border-danger text-danger col-md-4 p-3">
             Se eliminará la marca:
-
+            <?= $marca['mkNombre'] ?> con el id
+            <?= $marca['idMarca'] ?>
+            <button class="btn btn-danger btn-block mt-3">
+                Confirmar baja
+            </button>
+            <a href="adminMarcas.php" class="btn btn-outline-secondary btn-block">
+                volver a panel
+            </a>
         </div>
 <?php
     }
