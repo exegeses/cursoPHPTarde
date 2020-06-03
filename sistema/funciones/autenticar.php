@@ -18,8 +18,8 @@
         $cantidad = mysqli_num_rows($resultado);
         if( $cantidad == 1 ){
             ## rutina de autenticación
-
             $_SESSION['login'] = 1;
+
             //redirección a admin
             header( 'location: admin.php' );
         }
@@ -31,7 +31,11 @@
 
     function logout()
     {
+        session_unset(); // no es necesario ya que se eliminará la sesion
+        session_destroy();
 
+        ### redirección con demora
+        header('refresh:3; url=index.php');
     }
 
     function autenticar()
