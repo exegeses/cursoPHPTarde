@@ -23,20 +23,15 @@
 <?php
         if ( isset( $_GET['error'] ) ){
             $error = $_GET['error'];
+            $mensaje = 'Debe loguearse para ingresar';
             if( $error == 1 ){
+                $mensaje = 'Usuario y/o Clave incorrectos';
+            }
 ?>
             <div class="alert alert-danger p-4 col-6 mx-auto">
-                Usuario y/o Clave incorrectos
+                <?= $mensaje ?>
             </div>
 <?php
-            }
-            else{
-?>
-            <div class="alert alert-danger p-4 col-6 mx-auto">
-                Debe loguearse para ingresar.
-            </div>
-<?php
-            }
         }
 ?>
     </main>
