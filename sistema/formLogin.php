@@ -22,12 +22,21 @@
         </div>
 <?php
         if ( isset( $_GET['error'] ) ){
-        $error = $_GET['error'];
+            $error = $_GET['error'];
+            if( $error == 1 ){
 ?>
             <div class="alert alert-danger p-4 col-6 mx-auto">
                 Usuario y/o Clave incorrectos
             </div>
 <?php
+            }
+            else{
+?>
+            <div class="alert alert-danger p-4 col-6 mx-auto">
+                Debe loguearse para ingresar.
+            </div>
+<?php
+            }
         }
 ?>
     </main>
