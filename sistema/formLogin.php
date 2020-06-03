@@ -1,5 +1,5 @@
 <?php
-    #require 'config/config.php';
+    require 'config/config.php';
 	include 'includes/header.html';  
 	include 'includes/nav.php';  
 ?>
@@ -24,9 +24,9 @@
         if ( isset( $_GET['error'] ) ){
         $error = $_GET['error'];
 ?>
-        <div class="alert alert-danger p-4 col-6 mx-auto">
-            Usuario y/o Clave incorrectos
-        </div>
+            <div class="alert alert-danger p-4 col-6 mx-auto">
+                Usuario y/o Clave incorrectos
+            </div>
 <?php
         }
 ?>
