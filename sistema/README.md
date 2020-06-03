@@ -6,6 +6,4 @@
     
 >Tarea
 
-  terminar todos los eliminar 
-  
 
