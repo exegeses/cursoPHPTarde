@@ -20,7 +20,7 @@
         else{
 ?>
         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <a href="#"><i class="fas fa-sign-out-alt"></i> Nombre y Apellido </a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> <?= $_SESSION['usuario'] ?> </a>
         </button>
         <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item bg-dark" href="logout.php">Salir</a>

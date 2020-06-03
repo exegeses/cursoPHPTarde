@@ -19,7 +19,8 @@
         if( $cantidad == 1 ){
             ## rutina de autenticación
             $_SESSION['login'] = 1;
-
+            $usuario = mysqli_fetch_assoc($resultado);
+            $_SESSION['usuario'] = $usuario['usuNombre'].' '.$usuario['usuApellido'];
             //redirección a admin
             header( 'location: admin.php' );
         }
