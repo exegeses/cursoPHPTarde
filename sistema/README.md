@@ -6,4 +6,6 @@
     
 >Tarea
 
-
+    revisar el sistema completo
+    los 4 admins + CRUDS
+    
