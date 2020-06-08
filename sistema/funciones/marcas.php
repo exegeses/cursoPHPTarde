@@ -12,6 +12,18 @@
         return $resultado;
     }
 
+    function agregarMarca()
+    {
+        $mkNombre = $_POST['mkNombre'];
+        $link = conectar();
+        $sql = "INSERT INTO marcas
+                           ( mkNombre )
+                        VALUES
+                           ( '".$mkNombre."' )";
+        $resultado = mysqli_query($link, $sql);
+        return $resultado;
+    }
+
     /**
     * Funcion para saber si hay productos de una marca
     * @return int $cantidad
@@ -40,6 +52,8 @@
         $marca = mysqli_fetch_assoc($resultado);
         return $marca;
     }
+
+
     /**
      * listarMarcas()
      * verMarcaPorID()
