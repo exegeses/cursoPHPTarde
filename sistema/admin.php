@@ -7,7 +7,7 @@
 ?>
 
     <main class="container">
-        <h1>Dashboard - Panel principal de administración</h1>
+        <h1>Dashboard - Panel principal de administración </h1>
 
         <section class="list-group">
             <a href="adminMarcas.php" class="list-group-item list-group-item-action">
@@ -19,7 +19,9 @@
             <a href="adminProductos.php" class="list-group-item list-group-item-action">
                 Panel de administración de Productos.
             </a>
-            <a href="adminUsuarios.php" class="list-group-item list-group-item-action">
+            <a href="<?php echo ($_SESSION['idRol'] == 1 )?'adminUsuarios.php':'#'; ?>"
+               class="list-group-item list-group-item-action
+               <?= ($_SESSION['idRol']!=1 )?' disabled" tabindex="-1" aria-disabled="true':''; ?>">
                 Panel de administración de Usuarios.
             </a>
         </section>

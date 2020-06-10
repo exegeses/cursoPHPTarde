@@ -13,7 +13,7 @@
     ## configuramos datos de email a enviar
     $destinatario = 'ACA PONE TU EMAIL';
     $asunto = 'Email enviado desde mi sitio';
-    $cuerpo = '<div style="width: 500px; padding: 20px; background-color: #d9d9d9; margin:auto">';
+    $cuerpo = '<div style="width: 500px; padding: 20px; background-color: #F0F4F7; margin:auto">';
     $cuerpo .= 'Nombre: '.$nombre.'<br>';
     $cuerpo .= 'Email: '.$email.'<br>';
     $cuerpo .= 'Comentarios: '.$comentarios;

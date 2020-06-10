@@ -38,11 +38,17 @@
                             Modificar
                         </a>
                     </td>
+            <?php
+                    if( $_SESSION['idRol']==1 ){
+            ?>
                     <td>
                         <a href="formEliminarMarca.php?idMarca=<?= $marca['idMarca'] ?>" class="btn btn-outline-secondary">
                             Eliminar
                         </a>
                     </td>
+            <?php
+                    }
+            ?>
                 </tr>
 <?php
     }

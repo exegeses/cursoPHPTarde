@@ -9,7 +9,7 @@
         $usuEmail = $_POST['usuEmail'];
         $usuPass = $_POST['usuPass'];
         $link = conectar();
-        $sql = "SELECT usuNombre, usuApellido
+        $sql = "SELECT usuNombre, usuApellido, idRol
                     FROM usuarios
                     WHERE usuEmail = '".$usuEmail."'
                       AND  usuPass = '".$usuPass."'";
@@ -21,6 +21,7 @@
             $_SESSION['login'] = 1;
             $usuario = mysqli_fetch_assoc($resultado);
             $_SESSION['usuario'] = $usuario['usuNombre'].' '.$usuario['usuApellido'];
+            $_SESSION['idRol'] = $usuario['idRol'];
             //redirección a admin
             header( 'location: admin.php' );
         }
@@ -43,5 +44,12 @@
     {
         if ( !isset( $_SESSION['login'] ) ){
             header('location: formLogin.php?error=2');
+        }
+    }
+
+    function esAdmin()
+    {
+        if ( $_SESSION['idRol'] != 1  ){
+            header('location: formLogin.php?error=3');
         }
     }
