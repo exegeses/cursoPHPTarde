@@ -19,8 +19,8 @@
     $cuerpo .= 'Comentarios: '.$comentarios;
     $cuerpo .= '</div>';
 
-    $headers = 'MIME-Version: 1.0';
-    $headers .= 'Content-type: text/html; charset=utf-8';
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
     // Additional headers
     $headers .= 'From: Cthulu <cthulu@hp-lovecraft.com>';
 
